@@ -75,6 +75,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 100px;
+  .img {
+    width: 60%;
+  }
   .title {
     color: #333;
     font-size: clamp(3rem, 4vw, 4.4rem);
@@ -147,5 +150,23 @@
     letter-spacing: 0;
     text-transform: capitalize;
     max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    .img {
+      width: 90%;
+    }
+  }
+
+  .section5 {
+    display: flex;
+    flex-direction: column;
+    .img {
+      width: 90%;
+    }
   }
 }

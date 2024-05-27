@@ -11,8 +11,12 @@
       font-weight: 600;
     }
   }
-  :global(.slick-list) {
+  :global(.slick-track) {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
   }
+
   :global(.slick-next) {
     right: 100px;
   }
@@ -67,4 +71,31 @@
 .review {
   max-width: 800px;
   padding: 0 50px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .img {
+    height: 60vw;
+    h2 {
+      margin: 0;
+      bottom: 20px;
+      font-size: 1rem;
+    }
+  }
+  .root {
+    :global(.slick-prev),
+    :global(.slick-next) {
+      &::before {
+        font-size: 40px;
+      }
+    }
+
+    :global(.slick-next) {
+      right: 8vw;
+    }
+    :global(.slick-prev) {
+      left: 3vw;
+    }
+  }
 }

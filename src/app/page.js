@@ -142,7 +142,7 @@ export const DrData = ({ link = true }) => {
           </Link>
         )}
       </div>
-      <Image src={DRImg} />
+      <Image src={DRImg} className={classes.img} />
     </div>
   );
 };
