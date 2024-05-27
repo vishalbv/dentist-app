@@ -1,0 +1,70 @@
+.root {
+  width: 100%;
+
+  :global(.slick-prev),
+  :global(.slick-next) {
+    z-index: 100;
+
+    &::before {
+      font-size: 80px;
+      color: #d2d6d6;
+      font-weight: 600;
+    }
+  }
+  :global(.slick-list) {
+  }
+  :global(.slick-next) {
+    right: 100px;
+  }
+  :global(.slick-prev) {
+    left: 50px;
+  }
+}
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.img {
+  height: 35vw;
+  position: relative;
+  cursor: grab;
+  text-align: center;
+  h2 {
+    z-index: 200;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    letter-spacing: 8px;
+    line-height: 1.8;
+    margin: 40px 0;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+  &::after {
+    transition: all 0.2s linear;
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    inset: 0;
+    position: absolute;
+    z-index: 0;
+    opacity: unset;
+  }
+  &:hover {
+    &::after {
+      content: "";
+      background: rgba(69, 49, 3, 0.519);
+      inset: 0;
+      position: absolute;
+      z-index: 0;
+      opacity: unset;
+    }
+  }
+}
+.review {
+  max-width: 800px;
+  padding: 0 50px;
+}

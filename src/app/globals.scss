@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  text-align: center;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+p {
+  letter-spacing: 0.045em;
+}
+
+.link {
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  line-height: 2;
+  position: relative;
+  &::after {
+    background: black;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+  &:hover {
+    color: #97740c;
+    &::after {
+      background: #97740c;
+    }
+    svg {
+      g {
+        fill: #97740c;
+      }
+    }
+  }
+  svg {
+    height: 20px;
+    margin: 0 10px;
+  }
+}
