@@ -77,8 +77,8 @@ export const ReviewsCarousel = ({}) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     waitForAnimate: false,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 500,
+    autoplaySpeed: 4000,
     autoplay: true,
     arrows: null,
   };
