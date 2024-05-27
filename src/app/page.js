@@ -97,7 +97,7 @@ export default function Home() {
             <StarIcon />
             <StarIcon />
             <StarIcon />
-            <StarIcon /> <span>5</span>
+            <StarIcon /> <span className={classes.rating}>5</span>
             <span>Average Rating</span>
           </div>
         </div>
