@@ -10,14 +10,14 @@ export const Header = () => {
   const [opened, setOpened] = useState(false);
   const pathName = usePathname();
   const width = useWidth();
-  const isMobile = width < 1000 || false;
+  const isMobile = width && width < 1000;
   console.log(pathName);
   useEffect(() => {
     window.onscroll = () => setAttop(window.pageYOffset === 0 ? true : false);
 
     return () => (window.onscroll = null);
   });
-
+  console.log(isMobile);
   useEffect(() => {
     if (opened) document.body.classList.add("nav-opened");
     else document.body.classList.remove("nav-opened");
@@ -59,19 +59,20 @@ export const Header = () => {
           <HumberBerg onClick={() => setOpened(!opened)} opened={opened} />
         )}
       </div>
-      {!isMobile ? (
-        <div className={classes.links}>
-          <Link href="/">Home</Link>
-          <Link href="/dr-savitha-bathini">DR. SAVITHA BATHINI</Link>
-          <Link href="/about-us">About</Link>
-        </div>
-      ) : (
-        <div className={classes.links_mobile + " links_mobile"}>
-          <Link href="/">Home</Link>
-          <Link href="/dr-savitha-bathini">DR. SAVITHA BATHINI</Link>
-          <Link href="/about-us">About</Link>
-        </div>
-      )}
+      {isMobile !== undefined &&
+        (!isMobile ? (
+          <div className={classes.links}>
+            <Link href="/">Home</Link>
+            <Link href="/dr-savitha-bathini">DR. SAVITHA BATHINI</Link>
+            <Link href="/about-us">About</Link>
+          </div>
+        ) : (
+          <div className={classes.links_mobile + " links_mobile"}>
+            <Link href="/">Home</Link>
+            <Link href="/dr-savitha-bathini">DR. SAVITHA BATHINI</Link>
+            <Link href="/about-us">About</Link>
+          </div>
+        ))}
     </div>
   );
 };
