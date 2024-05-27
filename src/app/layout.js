@@ -8,7 +8,10 @@ import { Footer } from "./footer";
 // import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
-const montserrat = Montserrat({ subsets: ["latin"], weight: "400" });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
 const pacifico = Pacifico({ subsets: ["latin"], weight: "400" });
 // const customFont = localFont({ src: "./fonts/" });
 
