@@ -12,3 +12,4 @@ export { default as creativeImg } from "./1186756.jpg";
 export { default as AboutImg1 } from "./1126864.png";
 export { default as AboutImg2 } from "./1126865.png";
 export { default as AboutImg3 } from "./1126874.png";
+export { default as MapsImg } from "./maps.png";

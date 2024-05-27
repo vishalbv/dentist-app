@@ -2,7 +2,7 @@ import Image from "next/image";
 import classes from "./page.module.scss";
 import Video from "next-video";
 import Link from "next/link";
-import { DRImg, creativeImg } from "../images/images";
+import { DRImg, MapsImg, creativeImg } from "../images/images";
 
 import { HomeUsersCarousel, ReviewsCarousel } from "./carousel";
 import { CalendarIcon, StarIcon } from "../assets/assets";
@@ -104,26 +104,29 @@ export default function Home() {
       </div>
       <div>
         <div className={classes.section3}>
-          <div className={classes.title}>Call Us</div>
-          <div className={classes.subtitle}>CONTACT INFORMATION</div>
-          <div className={classes.details}>
-            <div>
-              <b>ADDRESS</b>
-            </div>
-            <div>
-              7000 Preston Rd <br />
-              Ste 400
-              <br /> Plano, TX 75024
-            </div>
-            <div>
-              <b>PHONE</b>
-            </div>
-            <div>
-              <a href="tel:+14697728905" className={"link"} target="_self">
-                469-772-8905
-              </a>
+          <div>
+            <div className={classes.title}>Call Us</div>
+            <div className={classes.subtitle}>CONTACT INFORMATION</div>
+            <div className={classes.details}>
+              <div>
+                <b>ADDRESS</b>
+              </div>
+              <div>
+                7000 Preston Rd <br />
+                Ste 400
+                <br /> Plano, TX 75024
+              </div>
+              <div>
+                <b>PHONE</b>
+              </div>
+              <div>
+                <a href="tel:+14697728905" className={"link"} target="_self">
+                  469-772-8905
+                </a>
+              </div>
             </div>
           </div>
+          <Image src={MapsImg} className={classes.mapImg} />
         </div>
       </div>
     </div>

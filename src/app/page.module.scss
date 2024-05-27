@@ -89,6 +89,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 100px;
+  text-align: left;
   .img {
     width: 60%;
   }
@@ -102,6 +103,14 @@
 }
 .section3 {
   padding: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3vw;
+  width: 90%;
+  .mapImg {
+    width: 60%;
+  }
   .title {
     color: #333;
     font-size: clamp(3rem, 4vw, 4.4rem);
@@ -124,6 +133,7 @@
   align-items: center;
   padding: 4vw;
   width: 100%;
+  background: #fffcf3;
 
   .title {
     color: #333;
@@ -153,7 +163,6 @@
 .section5 {
   display: flex;
   padding: 8vw 6vw;
-  padding-bottom: 2vw;
 
   align-items: center;
   gap: 3vw;
@@ -180,6 +189,13 @@
     display: flex;
     flex-direction: column;
     .img {
+      width: 90%;
+    }
+  }
+  .section3 {
+    display: flex;
+    flex-direction: column;
+    .mapImg {
       width: 90%;
     }
   }
