@@ -5,15 +5,6 @@ import Image from "next/image";
 import classes from "./carousel.module.scss";
 
 export const Carousel = ({ extraSettings, children }) => {
-  const images = [
-    { title: "Preventive", img: _1Img },
-    { title: "Restorative", img: _2Img },
-    { title: "Endodontics", img: _3Img },
-    { title: "Oral Surgery", img: _4Img },
-    { title: "Periodontics", img: _5Img },
-    { title: "Cosmetic Dentistry", img: _6Img },
-  ];
-
   var settings = {
     // dots: true,
     infinite: true,

@@ -19,12 +19,26 @@
   position: relative;
   width: 100%;
   .title {
-    font-size: 3em;
     z-index: 100;
     color: rgb(var(--background-rgb));
     font-weight: 600;
     text-align: center;
     margin: 3vw;
+
+    :global(.link) {
+      &::after {
+        background: white;
+      }
+      svg {
+        g {
+          fill: white;
+        }
+      }
+    }
+
+    > div:first-child {
+      font-size: 3em;
+    }
   }
   .video {
     position: absolute;

@@ -34,6 +34,7 @@ body {
 
 p {
   letter-spacing: 0.045em;
+  text-align: justify;
 }
 
 .link {
@@ -60,11 +61,11 @@ p {
   &:hover {
     color: #97740c;
     &::after {
-      background: #97740c;
+      background: #97740c !important;
     }
     svg {
       g {
-        fill: #97740c;
+        fill: #97740c !important;
       }
     }
   }

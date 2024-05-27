@@ -40,39 +40,31 @@ export const Header = () => {
           : "")
       }
     >
-      <div className={classes.actions}>
-        <a href="tel:+14697728905" className={"link"} target="_self">
-          469-772-8905
-        </a>
+      <div className={classes.headerContent}>
+        {isMobile !== undefined &&
+          (!isMobile ? (
+            <div className={classes.links}>
+              <Link href="/">Home</Link>
+              <Link href="/dr-savitha-bathini">DR. SAVITHA BATHINI</Link>
+              <Link href="/about-us">About</Link>
+            </div>
+          ) : (
+            <div className={classes.links_mobile + " links_mobile"}>
+              <Link href="/">Home</Link>
+              <Link href="/dr-savitha-bathini">DR. SAVITHA BATHINI</Link>
+              <Link href="/about-us">About</Link>
+            </div>
+          ))}
+        <div className={classes.actions}>
+          <a href="tel:+14697728905" className={"link"} target="_self">
+            469-772-8905
+          </a>
 
-        <a
-          className={"link"}
-          href="https://www.appointnow.com/?p=4763&amp;o=100&amp;rnd=638394456738193959&amp;culture=en-US"
-          target="_blank"
-        >
-          <span className="icon">
-            <CalendarIcon />
-          </span>
-          {!isMobile && "Book Appt."}
-        </a>
-        {isMobile && (
-          <HumberBerg onClick={() => setOpened(!opened)} opened={opened} />
-        )}
+          {isMobile && (
+            <HumberBerg onClick={() => setOpened(!opened)} opened={opened} />
+          )}
+        </div>
       </div>
-      {isMobile !== undefined &&
-        (!isMobile ? (
-          <div className={classes.links}>
-            <Link href="/">Home</Link>
-            <Link href="/dr-savitha-bathini">DR. SAVITHA BATHINI</Link>
-            <Link href="/about-us">About</Link>
-          </div>
-        ) : (
-          <div className={classes.links_mobile + " links_mobile"}>
-            <Link href="/">Home</Link>
-            <Link href="/dr-savitha-bathini">DR. SAVITHA BATHINI</Link>
-            <Link href="/about-us">About</Link>
-          </div>
-        ))}
     </div>
   );
 };

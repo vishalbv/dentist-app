@@ -1,9 +1,15 @@
 import Image from "next/image";
 import Video from "next-video";
 import classes from "./page.module.scss";
-import { AboutImg } from "../../images/images";
+import { AboutImg, AboutImg1, AboutImg2, AboutImg3 } from "../../images/images";
 
 export default function AboutUS() {
+  const images = [
+    { title: "Services", img: AboutImg1 },
+    { title: "office", img: AboutImg2 },
+    { title: "contact", img: AboutImg3 },
+  ];
+
   return (
     <div className={classes.root}>
       <div
@@ -34,6 +40,17 @@ export default function AboutUS() {
             compassionate care to a vast variety of people. Individuals of all
             ages are welcome to contact us today to schedule an appointment.
           </p>
+        </div>
+      </div>
+      <div className={classes.section2}>
+        <div className={classes.title}>LEARN MORE</div>
+        <div className={classes.description}>
+          {images.map((i, k) => (
+            <div key={k}>
+              <Image src={i.img} className={classes.img} />
+              <div className={classes.subtitle}>{i.title}</div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

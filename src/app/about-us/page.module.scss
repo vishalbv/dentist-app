@@ -43,4 +43,58 @@
       text-transform: uppercase;
     }
   }
+  .section2 {
+    padding: 4vw 8vw;
+    text-align: left;
+
+    .title {
+      font-family: montserrat, sans-serif;
+      font-size: clamp(1.4rem, 2vw, 1.6rem);
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      font-family: montserrat, sans-serif;
+      font-size: clamp(1.3rem, 2vw, 1rem);
+      font-weight: 300;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      position: absolute;
+      color: white;
+      z-index: 10;
+    }
+    .description {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2vw;
+      > div {
+        width: 33%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::after {
+          transition: all 0.2s linear;
+          content: "";
+          background: rgba(0, 0, 0, 0.4);
+          inset: 0;
+          position: absolute;
+          z-index: 0;
+          opacity: unset;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .description {
+    flex-direction: column;
+    > div {
+      width: 70% !important;
+    }
+  }
 }

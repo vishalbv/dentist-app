@@ -9,7 +9,11 @@
   padding: 0.5vw 3vw 0;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   min-height: 100px;
-
+  .headerContent {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
   .links {
     text-transform: uppercase;
     display: flex;
@@ -96,7 +100,7 @@
 
 @media only screen and (max-width: 1000px) {
   .header {
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .footer {
     :global(.social-icons) {

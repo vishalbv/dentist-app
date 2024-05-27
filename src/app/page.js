@@ -5,9 +5,9 @@ import Link from "next/link";
 import { DRImg, creativeImg } from "../images/images";
 
 import { HomeUsersCarousel, ReviewsCarousel } from "./carousel";
-import { StarIcon } from "../assets/assets";
-import { fonts, metadata } from "./layout";
-
+import { CalendarIcon, StarIcon } from "../assets/assets";
+import { fonts } from "./layout";
+// import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div className={classes.home}>
@@ -23,7 +23,22 @@ export default function Home() {
           >
             <source src="assets/hero.mp4" type="video/mp4" />
           </video>
-          <div className={classes.title}>Get a Confidence-Boosting Smile</div>
+          <div className={classes.title}>
+            <div>
+              Get a Confidence-Boosting <br />
+              Smile
+            </div>
+            <a
+              className={"link"}
+              href="https://www.appointnow.com/?p=4763&amp;o=100&amp;rnd=638394456738193959&amp;culture=en-US"
+              target="_blank"
+            >
+              <span className="icon">
+                <CalendarIcon />
+              </span>
+              {"Book Appt."}
+            </a>
+          </div>
         </div>
       </div>
       <div>
@@ -32,9 +47,11 @@ export default function Home() {
             <div>OraCare</div>
             <div>DENTISTRY</div>
           </div>
+
           <div className={classes.subtitle}>
             WHERE DIGITAL DENTISTRY LEADS THE WAY
           </div>
+
           <div className={classes.description}>
             <p>
               Welcome to OraCare Dentistry, where we seek to educate you about
