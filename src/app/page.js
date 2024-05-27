@@ -6,7 +6,7 @@ import { DRImg, creativeImg } from "../images/images";
 
 import { HomeUsersCarousel, ReviewsCarousel } from "./carousel";
 import { StarIcon } from "../assets/assets";
-import { metadata } from "./layout";
+import { fonts, metadata } from "./layout";
 
 export default function Home() {
   return (
@@ -62,7 +62,7 @@ export default function Home() {
       </div>
       <div>
         <div className={classes.section5}>
-          <div className={classes.title + " " + metadata.pacifico.className}>
+          <div className={classes.title + " " + fonts.pacifico.className}>
             Creative smiles for you!
           </div>
           <Image src={creativeImg} />
