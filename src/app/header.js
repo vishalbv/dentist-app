@@ -6,15 +6,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export const Header = () => {
-  const [atTop, setAttop] = useState();
+  const [atTop, setAttop] = useState(true);
   const [opened, setOpened] = useState(false);
   const pathName = usePathname();
   const width = useWidth();
   const isMobile = width && width < 1000;
   console.log(pathName);
   useEffect(() => {
-    window.onscroll = () => setAttop(window.pageYOffset === 0 ? true : false);
-
+    window.onscroll = () => setAttop(window.pageYOffset < 30 ? true : false);
+    setAttop(window.pageYOffset < 30 ? true : false);
     return () => (window.onscroll = null);
   });
   console.log(isMobile);
