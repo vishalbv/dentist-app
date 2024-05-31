@@ -1,7 +1,6 @@
 import { Inter, Montserrat, Pacifico } from "next/font/google";
 import "./globals.scss";
 import "./humberger.scss";
-import classes from "./layout.module.scss";
 // import { useEffect } from "react";
 import { Header } from "./header";
 import { Footer } from "./footer";

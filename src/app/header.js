@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import classes from "./layout.module.scss";
-import { CalendarIcon } from "../assets/assets";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

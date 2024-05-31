@@ -3,6 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
+
 const nextConfig = {
   webpack(config) {
     // Grab the existing rule that handles SVG imports
@@ -35,6 +36,12 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
+  reactStrictMode: true,
+  output: "export",
+  images: { unoptimized: true },
+  // distDir: "dist",
+  // trailingSlash: true,
+  // assetPrefix: ".",
 };
 
 export default nextConfig;
