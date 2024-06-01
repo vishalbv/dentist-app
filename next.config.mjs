@@ -36,11 +36,11 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  reactStrictMode: true,
-  output: "export",
-  images: { unoptimized: true },
+  // reactStrictMode: true,
+  // output: "export",
+  // images: { unoptimized: true },
   // distDir: "dist",
-  trailingSlash: true,
+  // trailingSlash: true,
   // assetPrefix: ".",
 };
 
