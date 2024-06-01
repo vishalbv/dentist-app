@@ -28,7 +28,7 @@
 }
 
 .nav-opened {
-  right: 280px;
+  margin-left: -280px;
   .links_mobile {
     transform: translateX(0%);
   }
