@@ -40,7 +40,7 @@ const nextConfig = {
   output: "export",
   images: { unoptimized: true },
   // distDir: "dist",
-  // trailingSlash: true,
+  trailingSlash: true,
   // assetPrefix: ".",
 };
 
