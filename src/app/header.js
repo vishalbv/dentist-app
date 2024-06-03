@@ -4,6 +4,8 @@ import classes from "./layout.module.scss";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { LogoIcon } from "../assets/assets";
+import Image from "next/image";
 
 export const Header = () => {
   const [atTop, setAttop] = useState(true);
@@ -41,28 +43,31 @@ export const Header = () => {
       }
     >
       <div className={classes.headerContent}>
-        {isMobile !== undefined &&
-          (!isMobile ? (
-            <div className={classes.links}>
+        <Image src={LogoIcon} className={classes.logo} />
+        <div className={classes.headerRight}>
+          {isMobile !== undefined && (
+            <div
+              className={
+                !isMobile
+                  ? classes.links
+                  : `${classes.links_mobile + " links_mobile"}`
+              }
+            >
               <Link href="/">Home</Link>
               <Link href="/dr-savitha-bathini">DR. SAVITHA BATHINI</Link>
+              <Link href="/services">Services</Link>
               <Link href="/about-us">About</Link>
             </div>
-          ) : (
-            <div className={classes.links_mobile + " links_mobile"}>
-              <Link href="/">Home</Link>
-              <Link href="/dr-savitha-bathini">DR. SAVITHA BATHINI</Link>
-              <Link href="/about-us">About</Link>
-            </div>
-          ))}
-        <div className={classes.actions}>
-          <a href="tel:+14697728905" className={"link"} target="_self">
-            469-772-8905
-          </a>
-
-          {isMobile && (
-            <HumberBerg onClick={() => setOpened(!opened)} opened={opened} />
           )}
+          <div className={classes.actions}>
+            <a href="tel:+14697728905" className={"link"} target="_self">
+              469-293-4444
+            </a>
+
+            {isMobile && (
+              <HumberBerg onClick={() => setOpened(!opened)} opened={opened} />
+            )}
+          </div>
         </div>
       </div>
     </div>

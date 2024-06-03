@@ -6,13 +6,21 @@
   background: white;
   color: black;
   width: 100%;
-  padding: 0.5vw 3vw 0;
+  padding: 0 3vw;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   min-height: 100px;
+  .logo {
+    width: 100px;
+    object-fit: cover;
+  }
+  .headerRight {
+    display: flex;
+    align-items: center;
+  }
   .headerContent {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
+    justify-content: space-between;
+    // margin-top: 10px;
   }
   .links {
     text-transform: uppercase;

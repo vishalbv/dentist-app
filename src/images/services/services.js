@@ -1,0 +1,16 @@
+export { default as s1 } from "./s1.jpg";
+export { default as s2 } from "./s2.jpg";
+export { default as s3 } from "./s3.jpg";
+export { default as s4 } from "./s4.jpg";
+export { default as s5 } from "./s5.jpg";
+export { default as s6 } from "./s6.jpg";
+export { default as s7 } from "./s7.jpg";
+export { default as s8 } from "./s8.jpg";
+export { default as s9 } from "./s9.jpg";
+export { default as s10 } from "./s10.jpg";
+export { default as s11 } from "./s11.jpg";
+export { default as s12 } from "./s12.jpg";
+export { default as s13 } from "./s13.jpg";
+export { default as s14 } from "./s14.jpg";
+export { default as s15 } from "./s15.jpg";
+export { default as ServiceCoverImg } from "./cover.png";
