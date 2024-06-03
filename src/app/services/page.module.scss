@@ -118,10 +118,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .description {
-    flex-direction: column;
-    > div {
-      width: 70% !important;
-    }
+  .itemsBlock {
+    justify-content: center;
   }
 }
