@@ -44,6 +44,7 @@ export const Header = () => {
     >
       <div className={classes.headerContent}>
         <Image src={LogoIcon} className={classes.logo} />
+        <div className={classes.launchNote}>New Website launching soon ...</div>
         <div className={classes.headerRight}>
           {isMobile !== undefined && (
             <div

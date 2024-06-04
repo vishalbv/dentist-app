@@ -54,16 +54,16 @@ export default function Home() {
 
           <div className={classes.description}>
             <p>
-              Welcome to OraCare Dentistry, where we seek to educate you about
-              the causes of dental diseases, provide you with long-term oral
-              wellness, and help you reach your smile goals. Our modern dental
-              practice, located in Plano, TX, is home to the latest equipment
-              and dental technology, like Laser dentistry, iTero® digital
-              impression scanner, Planmeca Viso® G7 CBCT, Overjet, BIOLASE® Epic
-              X™ soft tissue laser, HYDRIM Instrument Washer, and printers.
-              Along with Dr. Savitha Bathini, our team is excited about getting
-              to know you and working with you. Schedule your consultation with
-              us today.
+              Welcome to OraCare Dentistry at Plano, Texas, where we seek to
+              educate you about the causes of dental diseases, provide you with
+              long-term oral wellness, and help you reach your smile goals. Our
+              modern dental practice, located in Plano, Texas, is home to the
+              latest equipment and dental technology, like Laser dentistry,
+              iTero® digital impression scanner, Planmeca Viso® G7 CBCT,
+              Overjet, BIOLASE® Epic X™ soft tissue laser, HYDRIM Instrument
+              Washer, and printers. Along with Dr. Savitha Bathini, our team is
+              excited about getting to know you and working with you. Schedule
+              your consultation with us today.
             </p>
           </div>
           <Link href="/about-us" className={"link"}>
