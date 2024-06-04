@@ -10,7 +10,7 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   min-height: 100px;
   .logo {
-    width: 100px;
+    width: 160px;
     object-fit: cover;
   }
   .headerRight {
@@ -24,10 +24,11 @@
     // margin-top: 10px;
   }
   .launchNote {
-    background: rgba(40, 40, 40, 0.821);
-    color: white;
+    background: #ecfffe;
+    color: black;
     padding: 5px 3vw;
     border-radius: 2px;
+    font-weight: 500;
     text-transform: uppercase;
     font-size: 0.9em;
     animation: leaves 1s ease-in-out infinite alternate;
@@ -37,6 +38,7 @@
     display: flex;
     gap: 30px;
     padding: 2vw 5vw;
+    padding-left: 0;
     > a {
       text-transform: uppercase;
       font-weight: 500;
@@ -132,8 +134,9 @@
   .launchNote {
     position: absolute;
     right: 10px;
-    top: 10px;
-    font-size: 0.8em !important;
+    top: 5px;
+    font-size: 0.75em !important;
+    padding: 2px 15px !important;
   }
   .footer {
     :global(.social-icons) {

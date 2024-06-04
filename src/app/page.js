@@ -7,7 +7,10 @@ import { DRImg, MapsImg, creativeImg } from "../images/images";
 import { HomeUsersCarousel, ReviewsCarousel } from "./carousel";
 import { CalendarIcon, StarIcon } from "../assets/assets";
 import { fonts } from "./layout";
+import { DrData } from "./drData";
+import AOSComponent from "./utils/aos";
 // import { motion } from "framer-motion";
+
 export default function Home() {
   return (
     <div className={classes.home}>
@@ -29,7 +32,7 @@ export default function Home() {
               Smile
             </div>
             <a
-              className={"link"}
+              className={"link " + classes.bookAppt}
               href="https://www.appointnow.com/?p=4763&amp;o=100&amp;rnd=638394456738193959&amp;culture=en-US"
               target="_blank"
             >
@@ -79,10 +82,15 @@ export default function Home() {
       </div>
       <div>
         <div className={classes.section5}>
-          <div className={classes.title + " " + fonts.pacifico.className}>
-            Creative smiles for you!
-          </div>
-          <Image src={creativeImg} />
+          <AOSComponent>
+            <div
+              className={classes.title + " " + fonts.pacifico.className}
+              data-aos="fade-right"
+            >
+              Creative smiles for you!
+            </div>
+            <Image src={creativeImg} data-aos="fade-left" />
+          </AOSComponent>
         </div>
       </div>
       <div>
@@ -132,37 +140,3 @@ export default function Home() {
     </div>
   );
 }
-
-export const DrData = ({ link = true }) => {
-  return (
-    <div className={classes.section2}>
-      <div>
-        <div className={classes.title}>
-          <div>Savitha Bathini</div>
-        </div>
-        <div className={classes.subtitle}>DOCTOR OF DENTAL SURGERY</div>
-        <div className={classes.description}>
-          <p>
-            Dr. Savitha Bathini specializes in general dentistry, simple and
-            complex tooth extractions, wisdom teeth extractions, root canal
-            therapy, dentoalveolar surgery, partial and full-mouth
-            rehabilitation with implants and dentures, Digital Smile Design,
-            Invisalign® treatment, and cosmetic procedures like veneers and
-            teeth whitening. From a young age, the desire to help people is what
-            led her to pursue a career as a dentist. With her strong
-            determination and compassion for others, Dr. Bathini is dedicated to
-            providing the highest quality of dental care for all who come to see
-            her.
-          </p>
-        </div>
-
-        {link && (
-          <Link href="/dr-savitha-bathini" className={"link"}>
-            MEET DR. BATHINI
-          </Link>
-        )}
-      </div>
-      <Image src={DRImg} className={classes.img} />
-    </div>
-  );
-};

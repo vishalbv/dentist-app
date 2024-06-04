@@ -1,6 +1,6 @@
 import classes from "./page.module.scss";
 import classes2 from "../page.module.scss";
-import { DrData } from "../page";
+import { DrData } from "../drData";
 
 export default function DrPage() {
   return (
