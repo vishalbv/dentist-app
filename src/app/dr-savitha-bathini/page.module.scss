@@ -1,7 +1,36 @@
-.root {
+.hero {
   padding: 4vw;
+  padding-bottom: 2vw;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.section {
+  max-width: 1800px;
+  margin: 2vw auto;
+  padding: 2vw 2vw;
+
+  .title {
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: left;
+  }
+  p {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section {
+    margin: 2vw auto;
+    padding: 8vw 8vw;
+
+    .title {
+      font-size: 2em;
+      font-weight: 500;
+      text-align: left;
+    }
+  }
 }

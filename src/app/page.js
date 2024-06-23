@@ -26,22 +26,24 @@ export default function Home() {
           >
             <source src="assets/hero.mp4" type="video/mp4" />
           </video>
+        </div>
+      </div>
+      <div>
+        <div className={classes.mainHeading}>
           <div className={classes.title}>
-            <div>
-              Get a Confidence-Boosting <br />
-              Smile
-            </div>
-            <a
-              className={"link " + classes.bookAppt}
-              href="https://www.appointnow.com/?p=4763&amp;o=100&amp;rnd=638394456738193959&amp;culture=en-US"
-              target="_blank"
-            >
-              <span className="icon">
-                <CalendarIcon />
-              </span>
-              {"Book Appt."}
-            </a>
+            Get a Confidence-Boosting <br />
+            Smile
           </div>
+          <a
+            className={"link " + classes.bookAppt}
+            href="https://www.appointnow.com/?p=4763&amp;o=100&amp;rnd=638394456738193959&amp;culture=en-US"
+            target="_blank"
+          >
+            <span className="icon">
+              <CalendarIcon />
+            </span>
+            {"Book Appt."}
+          </a>
         </div>
       </div>
       <div>
