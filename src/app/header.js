@@ -64,7 +64,7 @@ export const Header = () => {
             </div>
           )}
           <div className={classes.actions}>
-            <a href="tel:+14697728905" className={"link"} target="_self">
+            <a href="tel:+14692934444" className={"link"} target="_self">
               469-293-4444
             </a>
 

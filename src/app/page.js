@@ -84,15 +84,15 @@ export default function Home() {
       </div>
       <div>
         <div className={classes.section5}>
-          <AOSComponent>
-            <div
-              className={classes.title + " " + fonts.pacifico.className}
-              data-aos="fade-right"
-            >
-              Creative smiles for you!
-            </div>
-            <Image src={creativeImg} data-aos="fade-left" />
-          </AOSComponent>
+          {/* <AOSComponent> */}
+          <div
+            className={classes.title + " " + fonts.pacifico.className}
+            data-aos="fade-right"
+          >
+            Creative smiles for you!
+          </div>
+          <Image src={creativeImg} data-aos="fade-left" />
+          {/* </AOSComponent> */}
         </div>
       </div>
       <div>
@@ -130,7 +130,7 @@ export default function Home() {
                 <b>PHONE</b>
               </div>
               <div>
-                <a href="tel:+14697728905" className={"link"} target="_self">
+                <a href="tel:+14692934444" className={"link"} target="_self">
                   469-293-4444
                 </a>
               </div>
